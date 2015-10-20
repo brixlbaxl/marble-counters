@@ -10,6 +10,7 @@ body, html {
 	width: 100%;
 	margin: 0;
 	background-color: #eee;
+	background-image: url(https://raw.githubusercontent.com/brixlbaxl/marble-counters/gh-pages/res/bg.jpg);
 }
 
 .app, .state {
