@@ -285,47 +285,6 @@ var VoteSection = React.createClass({
 				'Voting:'
 			),
 			React.createElement(
-				'small',
-				null,
-				'Reminder: There will either be',
-				React.createElement(
-					'b',
-					null,
-					' 100'
-				),
-				',',
-				React.createElement(
-					'b',
-					null,
-					' 200'
-				),
-				',',
-				React.createElement(
-					'b',
-					null,
-					' 300'
-				),
-				',',
-				React.createElement(
-					'b',
-					null,
-					' 500'
-				),
-				',',
-				React.createElement(
-					'b',
-					null,
-					' 800'
-				),
-				', or',
-				React.createElement(
-					'b',
-					null,
-					' 1300 '
-				),
-				'marbles.'
-			),
-			React.createElement(
 				'pre',
 				{ className: 'pre-scrollable' },
 				React.createElement(VoteList, { app: app })
@@ -1054,7 +1013,7 @@ var App = React.createClass({
 */
 
 function randomValue(MAX_VALUE) {
-	return array[Math.floor(MAX_VALUE * Math.random())];
+	return Math.floor(MAX_VALUE * Math.random());
 }
 
 React.render(React.createElement(App, { marbles: randomValue(2000) }), document.body);

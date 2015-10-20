@@ -199,17 +199,6 @@ var VoteSection = React.createClass({
 					Voting:
 					</h3>
 
-					<small>
-					Reminder: 
-					There will either be<b> 100</b>,
-										<b> 200</b>,
-										<b> 300</b>,
-										<b> 500</b>,
-										<b> 800</b>,
-									  or<b> 1300 </b> 
-					marbles.
-					</small>
-
 					<pre className="pre-scrollable">
 						<VoteList app={app} />
 					</pre>
