@@ -32,7 +32,12 @@ body, html {
 	color: #fff;
 	margin: 0;
 	padding: 5vh;
+	text-shadow: 0 0 1vmin black;
 	font-family: monospace;
+}
+
+.state .container {
+	box-shadow: 0 0 1vmin black;
 }
 
 th {
