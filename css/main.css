@@ -20,12 +20,16 @@ body, html {
 	background-color: #eee;
 }
 
-.state {
+.app .state {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         background-image: url(https://raw.githubusercontent.com/brixlbaxl/marble-counters/gh-pages/res/bg.jpg);
+}
+
+.state .header {
+	color: #fff;
 }
 
 th {

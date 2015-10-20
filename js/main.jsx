@@ -889,7 +889,7 @@ var App = React.createClass({
 		return (
 			<div className="app container">
 				<div className="jumbotron state">
-					<div className="page-header h1">
+					<div className="h1 header">
 						Marble Counters!
 					</div>
 					<pre className="container">
