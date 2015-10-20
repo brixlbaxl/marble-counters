@@ -26,6 +26,7 @@ body, html {
         margin: 0;
         padding: 0;
         background-image: url(https://raw.githubusercontent.com/brixlbaxl/marble-counters/gh-pages/res/background.jpg);
+	background-size: 100%;
 }
 
 .state .header {
