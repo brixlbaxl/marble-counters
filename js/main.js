@@ -930,13 +930,9 @@ var App = React.createClass({
 	},
 
 	setPlayerVote: function setPlayerVote(vote, player) {
-		function isValidVote(vote) {
-			var validVotes = [100, 200, 300, 500, 800, 1300];
-			return validVotes.indexOf(Number(vote)) > -1;
-		}
 
 		vote = Number(vote);
-		if (!isValidVote(vote)) return;
+		if (!Number.isInteger(vote)) return;
 		player.vote = vote;
 		player.voted = true;
 		var players = this.getPlayers();
@@ -1057,10 +1053,8 @@ var App = React.createClass({
 	main.jsx
 */
 
-var validMarbles = [100, 200, 300, 500, 800, 1300];
-
-function randomValue(array) {
-	return array[Math.floor(array.length * Math.random())];
+function randomValue(MAX_VALUE) {
+	return array[Math.floor(MAX_VALUE * Math.random())];
 }
 
-React.render(React.createElement(App, { marbles: randomValue(validMarbles) }), document.body);
+React.render(React.createElement(App, { marbles: randomValue(2000) }), document.body);
