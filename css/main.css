@@ -30,6 +30,8 @@ body, html {
 
 .state .header {
 	color: #fff;
+	margin: 0;
+	font-family: monospace;
 }
 
 th {
