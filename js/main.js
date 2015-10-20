@@ -993,7 +993,7 @@ var App = React.createClass({
 				'div',
 				{ className: 'jumbotron state' },
 				React.createElement(
-					'h1',
+					'div',
 					{ className: 'page-header h1' },
 					'Marble Counters!'
 				),
