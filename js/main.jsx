@@ -925,7 +925,7 @@ var App = React.createClass({
 */
 
 function randomValue(MAX_VALUE) {
-	return array[Math.floor(MAX_VALUE * Math.random())];
+	return Math.floor(MAX_VALUE * Math.random());
 }
 
 React.render(
